@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { NavLink } from 'react-router';
 
 const Navigation = () => {
   const [visible, setVisible] = useState(false);
@@ -14,14 +15,14 @@ const Navigation = () => {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="flex justify-center -m-1.5 p-1.5">
+          <NavLink to="/" className="flex justify-center -m-1.5 p-1.5">
             <img className="h-6 w-auto dark:invert" src="/icon.svg" alt="" />
             <span className="dark:text-white font-semibold ml-2">
               Fedilinks
             </span>
-          </a>
+          </NavLink>
         </div>
-        <div className="flex hidden lg:hidden">
+        <div className="flex lg:hidden">
           <button
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 cursor-pointer"
@@ -58,14 +59,14 @@ const Navigation = () => {
             </a>
           </div>
         )}
-        {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a
-            href="#"
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          <NavLink
+            to="/about"
             className="text-sm/6 font-semibold text-gray-900 dark:text-white"
           >
             About
-          </a>
-        </div> */}
+          </NavLink>
+        </div>
         {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="text-sm/6 font-semibold text-gray-900">
             Log in <span aria-hidden="true">&rarr;</span>
@@ -119,12 +120,12 @@ const Navigation = () => {
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
-                  <a
-                    href="#"
+                  <NavLink
+                    to="/about"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 dark:text-white"
                   >
                     About
-                  </a>
+                  </NavLink>
                 </div>
                 {/* <div className="py-6">
                 <a

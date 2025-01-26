@@ -1,8 +1,7 @@
-import './App.css';
+import { Outlet } from 'react-router';
 import Navigation from './components/Navigation';
-import Listing from './components/Listing';
 
-function App() {
+const Layout = () => {
   return (
     <>
       <div className="flex h-full">
@@ -16,22 +15,14 @@ function App() {
             <div className="pb-4">
               <Navigation />
             </div>
-            {/* <header className="pt-8 pb-4 px-8">
-              <h1 className="text-3xl font-semibold dark:text-white">
-                Fedilinks
-              </h1>
-              <h3 className="dark:text-white">
-                Trendings links from Mastodon instances.
-              </h3>
-            </header> */}
             <main className="px-8">
-              <Listing />
+              <Outlet />
             </main>
           </div>
         </div>
       </div>
     </>
   );
-}
+};
 
-export default App;
+export default Layout;
