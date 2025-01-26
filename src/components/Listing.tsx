@@ -1,14 +1,25 @@
 import { useState, useEffect } from 'react';
-import { parse } from 'psl';
+import { parse } from 'tldts';
+
+interface IEntry {
+  id: string;
+  title: string;
+  description: string;
+  url: string;
+  image: string;
+  source: string;
+  updated_at: string;
+}
 
 const Listing = () => {
-  const [entries, setEntries] = useState<Any>([]);
+  const [entries, setEntries] = useState<IEntry[]>([]);
 
   useEffect(() => {
     const API = 'https://fedilinks.sinacosa.com/v1';
     // const endpoint = '/list_links?limit=10&offset=0'
     const endpoint = '/list_ranked_links?limit=10&offset=0';
 
+    // Get latest entries
     fetch(`${API}${endpoint}`)
       .then((response) => response.json())
       .then(({ links }) => {
@@ -26,13 +37,12 @@ const Listing = () => {
   };
 
   const formatSource = (source: string) => {
-    const urlObject = new URL(source);
-    return parse(urlObject.hostname).domain;
+    return parse(source).domain;
   };
 
   return (
     <>
-      {entries.map((entry: object) => {
+      {entries.map((entry: IEntry) => {
         return (
           <article
             key={entry.id}
