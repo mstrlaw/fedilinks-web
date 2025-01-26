@@ -15,4 +15,12 @@
     <div id="root" class="h-full"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
+  <script>
+    if('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('./serviceWorker.js')
+              .catch((err) => console.log('Unable to register SW: ', err));
+        })
+    }
+</script>
 </html>
