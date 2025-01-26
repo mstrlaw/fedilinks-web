@@ -16,8 +16,8 @@ const Listing = () => {
 
   useEffect(() => {
     const API = 'https://fedilinks.sinacosa.com/v1';
-    // const endpoint = '/list_links?limit=10&offset=0'
-    const endpoint = '/list_ranked_links?limit=10&offset=0';
+    const endpoint = '/list_links?limit=10&offset=0';
+    // const endpoint = '/list_ranked_links?limit=10&offset=0';
 
     // Get latest entries
     fetch(`${API}${endpoint}`)
