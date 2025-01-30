@@ -9,7 +9,7 @@ interface IEntry {
   source: string;
   provider_name: string;
   updated_at: string;
-  publised_at: string;
+  published_at: string;
   uses: string;
 }
 

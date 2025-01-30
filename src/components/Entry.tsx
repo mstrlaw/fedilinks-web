@@ -88,10 +88,10 @@ const Entry = ({ entry }: Props) => {
         <div className="my-2">
           <p className="text-xs font-medium inline text-gray-800 dark:text-gray-400">
             <time
-              title={formatDate(entry.publised_at)}
-              dateTime={entry.publised_at}
+              title={formatDate(entry.published_at)}
+              dateTime={entry.published_at}
             >
-              {formatTimeAgo(entry.publised_at)}
+              {formatTimeAgo(entry.published_at)}
             </time>
             &nbsp;by&nbsp;
             <span className="text-xs">{entry.provider_name}</span>
