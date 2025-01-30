@@ -16,7 +16,11 @@ const Navigation = () => {
       >
         <div className="flex lg:flex-1">
           <NavLink to="/" className="flex justify-center -m-1.5 p-1.5">
-            <img className="h-6 w-auto dark:invert" src="/icon.svg" alt="" />
+            <img
+              className="h-6 w-auto dark:invert"
+              src="/icon.svg"
+              alt="Fedilinks Logo"
+            />
             <span className="dark:text-white font-semibold ml-2">
               Fedilinks
             </span>
@@ -80,19 +84,19 @@ const Navigation = () => {
           <div className="fixed inset-0 z-10"></div>
           <div className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-zinc-50 dark:bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a
-                href="#"
+              <NavLink
+                to="/"
                 className="sm:hidden flex justify-center -m-1.5 p-1.5"
               >
                 <img
                   className="h-6 w-auto dark:invert"
                   src="/icon.svg"
-                  alt=""
+                  alt="Fedilinks Logo"
                 />
                 <span className="dark:text-white font-semibold ml-2">
                   Fedilinks
                 </span>
-              </a>
+              </NavLink>
               <div></div>
               <button
                 type="button"

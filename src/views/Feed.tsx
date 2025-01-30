@@ -1,7 +1,7 @@
 import Listing from '../components/Listing';
 
-function App() {
+function Feed() {
   return <Listing />;
 }
 
-export default App;
+export default Feed;
