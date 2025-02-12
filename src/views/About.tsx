@@ -40,19 +40,129 @@ function About() {
               </svg>
             </span>
             <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-              Launch V0
+              V0.2
               <span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-blue-900 dark:text-blue-300 ms-3">
                 Latest
               </span>
             </h3>
             <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-              Released on January 28th, 2024
+              February 3rd, 2025
             </time>
             <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. In quod
-              voluptatum exercitationem vero necessitatibus enim. Vel sunt eos,
-              hic autem placeat deleniti dicta explicabo nostrum unde illo
-              voluptatem accusantium magnam.
+              Tweak to the ranking algorithm. Links now rank based on recent
+              usage and recency: more recent and frequently used links rank
+              higher. Added other instances with larger use base to include
+              broader diversity of links.
+              <br />
+              <br />
+              As of now servers include:
+              <ul className="pl-2">
+                <li>
+                  <a className="underline" href="https://ai.wiki">
+                    ai.wiki
+                  </a>
+                </li>
+                <li>
+                  <a className="underline" href="https://aus.social">
+                    aus.social
+                  </a>
+                </li>
+                <li>
+                  <a className="underline" href="https://floss.social">
+                    floss.social
+                  </a>
+                </li>
+                <li>
+                  <a className="underline" href="https://hachyderm.io">
+                    hachyderm.io
+                  </a>
+                </li>
+                <li>
+                  <a className="underline" href="https://infosec.exchange">
+                    infosec.exchange
+                  </a>
+                </li>
+                <li>
+                  <a className="underline" href="https://mas.to">
+                    mas.to
+                  </a>
+                </li>
+                <li>
+                  <a className="underline" href="https://masto.ai">
+                    masto.ai
+                  </a>
+                </li>
+                <li>
+                  <a className="underline" href="https://mastodon.ie">
+                    mastodon.ie
+                  </a>
+                </li>
+                <li>
+                  <a className="underline" href="https://mastodon.online">
+                    mastodon.online
+                  </a>
+                </li>
+                <li>
+                  <a className="underline" href="https://mastodon.scot">
+                    mastodon.scot
+                  </a>
+                </li>
+                <li>
+                  <a className="underline" href="https://mastodon.sdf.org">
+                    mastodon.sdf.org
+                  </a>
+                </li>
+                <li>
+                  <a className="underline" href="https://mastodon.world">
+                    mastodon.world
+                  </a>
+                </li>
+                <li>
+                  <a className="underline" href="https://mastodon.social">
+                    mastodon.social
+                  </a>
+                </li>
+                <li>
+                  <a className="underline" href="https://mstdn.ca">
+                    mstdn.ca
+                  </a>
+                </li>
+                <li>
+                  <a className="underline" href="https://mstdn.party">
+                    mstdn.party
+                  </a>
+                </li>
+                <li>
+                  <a className="underline" href="https://mstdn.social">
+                    mstdn.social
+                  </a>
+                </li>
+                <li>
+                  <a className="underline" href="https://sfba.social">
+                    sfba.social
+                  </a>
+                </li>
+                <li>
+                  <a className="underline" href="https://social.vivaldi.net">
+                    social.vivaldi.net
+                  </a>
+                </li>
+                <li>
+                  <a className="underline" href="https://tech.lgbt">
+                    tech.lgbt
+                  </a>
+                </li>
+                <li>
+                  <a className="underline" href="https://techhub.social">
+                    techhub.social
+                  </a>
+                </li>
+                <li>
+                  <a className="underline" href="https://universeodon.com">
+                    universeodon.com
+                  </a>
+                </li>
+              </ul>
             </p>
           </li>
           <li className="mb-10 ms-6">
@@ -73,16 +183,16 @@ function About() {
               </svg>
             </span>
             <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-              V0
+              V0.1
             </h3>
             <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               January 20th, 2025
             </time>
             <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Excepturi id eum molestias sequi optio vel ipsa placeat
-              blanditiis, dolore assumenda, nesciunt consequatur sint
-              consequuntur magnam molestiae, cumque ab veniam unde!
+              First version of the aggregator launched: a simple web app and a
+              Go server just showing the top trending links for a handful or
+              instances. Ranking is merely by top "use". Links are retrieved
+              every hour per server instance.
             </p>
           </li>
           <li className="ms-6">
