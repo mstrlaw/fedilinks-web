@@ -6,10 +6,9 @@ const Listing = () => {
   const [entries, setEntries] = useState<IEntry[]>([]);
 
   useEffect(() => {
-    const API = 'https://fedilinks.sinacosa.com/v2';
-    const endpoint = '/list_ranked_links?limit=20&offset=0';
-    // const endpoint = '/list_links?limit=10&offset=0';
-    // const endpoint = '/list_ranked_links?limit=10&offset=0';
+    let offset: number = 0;
+    const API = import.meta.env.VITE_SERVER_API;
+    const endpoint = `/list_ranked_links?limit=20&offset=${offset}`;
 
     // Get latest entries
     fetch(`${API}${endpoint}`)
