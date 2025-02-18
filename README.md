@@ -1,7 +1,10 @@
-# Fedilinks Web Client
+# Fedilinks
 
-TODO: Improve readme
+### Platform that displays aggregated top links from multiple Mastodon instances.
 
-<a href="https://rsms.me/inter/" target="_blank">Font</a> by <a href="https://rsms.me/" target="_blank">Rasmus</a>
+![alt text](https://github.com/mstrlaw/fedilinks-web/blob/main/public/preview.png?raw=true)
 
-Link Icon by <a href="https://www.flaticon.com/free-icons/link" title="link icons">Freepik (Flaticon)</a>
+**Credis**
+
+- <a href="https://rsms.me/inter/" target="_blank">Font</a> by <a href="https://rsms.me/" target="_blank">Rasmus</a>
+- Link Icon by <a href="https://www.flaticon.com/free-icons/link" title="link icons">Freepik (Flaticon)</a>
