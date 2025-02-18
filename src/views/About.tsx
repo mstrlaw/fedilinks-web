@@ -28,13 +28,13 @@ function About() {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 stroke="currentColor"
                 className="w-4 h-4 text-blue-800 dark:text-blue-300"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
                 />
               </svg>
@@ -56,114 +56,114 @@ function About() {
               <br />
               <br />
               As of now servers include:
-              <ul className="pl-2">
-                <li>
-                  <a className="underline" href="https://ai.wiki">
-                    ai.wiki
-                  </a>
-                </li>
-                <li>
-                  <a className="underline" href="https://aus.social">
-                    aus.social
-                  </a>
-                </li>
-                <li>
-                  <a className="underline" href="https://floss.social">
-                    floss.social
-                  </a>
-                </li>
-                <li>
-                  <a className="underline" href="https://hachyderm.io">
-                    hachyderm.io
-                  </a>
-                </li>
-                <li>
-                  <a className="underline" href="https://infosec.exchange">
-                    infosec.exchange
-                  </a>
-                </li>
-                <li>
-                  <a className="underline" href="https://mas.to">
-                    mas.to
-                  </a>
-                </li>
-                <li>
-                  <a className="underline" href="https://masto.ai">
-                    masto.ai
-                  </a>
-                </li>
-                <li>
-                  <a className="underline" href="https://mastodon.ie">
-                    mastodon.ie
-                  </a>
-                </li>
-                <li>
-                  <a className="underline" href="https://mastodon.online">
-                    mastodon.online
-                  </a>
-                </li>
-                <li>
-                  <a className="underline" href="https://mastodon.scot">
-                    mastodon.scot
-                  </a>
-                </li>
-                <li>
-                  <a className="underline" href="https://mastodon.sdf.org">
-                    mastodon.sdf.org
-                  </a>
-                </li>
-                <li>
-                  <a className="underline" href="https://mastodon.world">
-                    mastodon.world
-                  </a>
-                </li>
-                <li>
-                  <a className="underline" href="https://mastodon.social">
-                    mastodon.social
-                  </a>
-                </li>
-                <li>
-                  <a className="underline" href="https://mstdn.ca">
-                    mstdn.ca
-                  </a>
-                </li>
-                <li>
-                  <a className="underline" href="https://mstdn.party">
-                    mstdn.party
-                  </a>
-                </li>
-                <li>
-                  <a className="underline" href="https://mstdn.social">
-                    mstdn.social
-                  </a>
-                </li>
-                <li>
-                  <a className="underline" href="https://sfba.social">
-                    sfba.social
-                  </a>
-                </li>
-                <li>
-                  <a className="underline" href="https://social.vivaldi.net">
-                    social.vivaldi.net
-                  </a>
-                </li>
-                <li>
-                  <a className="underline" href="https://tech.lgbt">
-                    tech.lgbt
-                  </a>
-                </li>
-                <li>
-                  <a className="underline" href="https://techhub.social">
-                    techhub.social
-                  </a>
-                </li>
-                <li>
-                  <a className="underline" href="https://universeodon.com">
-                    universeodon.com
-                  </a>
-                </li>
-              </ul>
             </p>
+            <ul className="pl-2 text-gray-500 dark:text-gray-400">
+              <li>
+                <a className="underline" href="https://ai.wiki">
+                  ai.wiki
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://aus.social">
+                  aus.social
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://floss.social">
+                  floss.social
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://hachyderm.io">
+                  hachyderm.io
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://infosec.exchange">
+                  infosec.exchange
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://mas.to">
+                  mas.to
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://masto.ai">
+                  masto.ai
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://mastodon.ie">
+                  mastodon.ie
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://mastodon.online">
+                  mastodon.online
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://mastodon.scot">
+                  mastodon.scot
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://mastodon.sdf.org">
+                  mastodon.sdf.org
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://mastodon.world">
+                  mastodon.world
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://mastodon.social">
+                  mastodon.social
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://mstdn.ca">
+                  mstdn.ca
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://mstdn.party">
+                  mstdn.party
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://mstdn.social">
+                  mstdn.social
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://sfba.social">
+                  sfba.social
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://social.vivaldi.net">
+                  social.vivaldi.net
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://tech.lgbt">
+                  tech.lgbt
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://techhub.social">
+                  techhub.social
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://universeodon.com">
+                  universeodon.com
+                </a>
+              </li>
+            </ul>
           </li>
           <li className="mb-10 ms-6">
             <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
@@ -171,13 +171,13 @@ function About() {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 stroke="currentColor"
                 className="w-4 h-4 text-blue-800 dark:text-blue-300"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
                 />
               </svg>
@@ -201,13 +201,13 @@ function About() {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 stroke="currentColor"
                 className="w-4 h-4 text-blue-800 dark:text-blue-300"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"
                 />
               </svg>
