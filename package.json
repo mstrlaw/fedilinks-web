@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.0",
+    "@uidotdev/usehooks": "^2.4.1",
+    "axios": "^1.7.9",
     "blurhash": "^2.0.5",
     "date-fns": "^4.1.0",
     "psl": "^1.15.0",
