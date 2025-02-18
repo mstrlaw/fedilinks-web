@@ -4,7 +4,7 @@ const axios = ax.create({
   baseURL: import.meta.env.VITE_SERVER_API,
 });
 
-export const getEntries = async (offset: number = 0) => {
+export const getEntries = async ({ offset = 0 }: { offset?: number }) => {
   const endpoint = `/list_ranked_links?limit=20&offset=${offset}`;
   return await axios.get(`${endpoint}`);
 }

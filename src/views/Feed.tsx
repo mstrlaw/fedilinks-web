@@ -19,27 +19,19 @@ function Feed() {
       return;
     }
 
-    const newOffset = offset + 1;
+    const newOffset = 20 + offset;
     setOffset(newOffset);
 
     const getData = async () => {
-      const data = await getEntries(offset).catch((err) => {
+      const data = await getEntries({ offset }).catch((err) => {
         console.log('Error retrieving entries');
         throw new Error(err);
       });
 
-      setEntries((prevEntries) => {
-        const newEntries = data.data.links_with_usage;
-
-        // Deduplicatimg entries for now since API can return the same entry in consequent calls
-        const uniqueEntries = [
-          ...new Map(
-            [...prevEntries, ...newEntries].map((entry) => [entry.id, entry])
-          ).values(),
-        ];
-
-        return uniqueEntries;
-      });
+      setEntries((prevEntries) => [
+        ...prevEntries,
+        ...data.data.links_with_usage,
+      ]);
     };
 
     getData();
@@ -47,7 +39,6 @@ function Feed() {
 
   return (
     <>
-      {/* <div className="fixed top-0 right-0 bg-white">{offset}</div> */}
       <Listing entries={entries} />
       <div ref={ref} className="h-32 w-full"></div>
     </>
