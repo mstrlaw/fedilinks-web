@@ -7,11 +7,12 @@ function About() {
             What is Fedilinks
           </h2>
           <p className="mt-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-zinc-100 sm:text-3xl lg:text-balance">
-            Fediverse trends in one place
+            Fediverse trending links in one place.
           </p>
-          <p className="mt-5 text-lg/8 text-gray-700 dark:text-zinc-200">
-            Fedilinks combines trending stories from multiple networks into one
-            convenient feed.
+          <p className="mt-5 text-lg text-gray-700 dark:text-zinc-200">
+            See all trending links from multiple Mastodon instances. A
+            convenient way to discover all the cool things different communities
+            are sharing.
           </p>
         </div>
 
@@ -40,10 +41,38 @@ function About() {
               </svg>
             </span>
             <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-              V0.3
+              V0.4
               <span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-blue-900 dark:text-blue-300 ms-3">
                 Latest
               </span>
+            </h3>
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              February 18th, 2025
+            </time>
+            <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+              Introduces a new endpoint to list links per insert date instead of
+              ranking score.
+            </p>
+          </li>
+          <li className="mb-10 ms-6">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="w-4 h-4 text-blue-800 dark:text-blue-300"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+                />
+              </svg>
+            </span>
+            <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+              V0.3
             </h3>
             <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               February 18th, 2025

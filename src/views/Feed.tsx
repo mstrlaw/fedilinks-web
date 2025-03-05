@@ -28,10 +28,7 @@ function Feed() {
         throw new Error(err);
       });
 
-      setEntries((prevEntries) => [
-        ...prevEntries,
-        ...data.data.links_with_usage,
-      ]);
+      setEntries((prevEntries) => [...prevEntries, ...data.data.links]);
     };
 
     getData();

@@ -78,9 +78,9 @@ const Entry = ({ entry }: Props) => {
           >
             {formatSource(entry.source)}
           </a>
-          <span className="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-blue-700/10 ring-inset ml-2">
+          {/* <span className="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-blue-700/10 ring-inset ml-2">
             {entry.uses} uses
-          </span>
+          </span> */}
         </div>
       </div>
 

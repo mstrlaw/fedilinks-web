@@ -5,6 +5,6 @@ const axios = ax.create({
 });
 
 export const getEntries = async ({ offset = 0 }: { offset?: number }) => {
-  const endpoint = `/list_ranked_links?limit=20&offset=${offset}`;
+  const endpoint = `/links?limit=20&offset=${offset}`;
   return await axios.get(`${endpoint}`);
 }
