@@ -65,6 +65,13 @@ const Navigation = () => {
         )}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <NavLink
+            to="https://rss.fedilinks.com/feed.xml"
+            target="_blank"
+            className="text-sm/6 font-semibold text-gray-900 dark:text-white mr-2"
+          >
+            RSS
+          </NavLink>
+          <NavLink
             to="/about"
             className="text-sm/6 font-semibold text-gray-900 dark:text-white"
           >
@@ -124,6 +131,13 @@ const Navigation = () => {
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
+                  <NavLink
+                    to="https://rss.fedilinks.com/feed.xml"
+                    target="_blank"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 dark:text-white"
+                  >
+                    RSS
+                  </NavLink>
                   <NavLink
                     to="/about"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 dark:text-white"

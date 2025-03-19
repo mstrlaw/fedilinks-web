@@ -41,10 +41,41 @@ function About() {
               </svg>
             </span>
             <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-              V0.4
+              V0.5
               <span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-blue-900 dark:text-blue-300 ms-3">
                 Latest
               </span>
+            </h3>
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              March 19th, 2025
+            </time>
+            <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+              Implements an RSS providing the same content from the web app at{' '}
+              <a href="https://rss.fedilinks.com/" target="_blank">
+                https://rss.fedilinks.com/
+              </a>
+              . Updated once per hour.
+            </p>
+          </li>
+          <li className="mb-10 ms-6">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="w-4 h-4 text-blue-800 dark:text-blue-300"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+                />
+              </svg>
+            </span>
+            <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+              V0.4
             </h3>
             <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               February 18th, 2025
