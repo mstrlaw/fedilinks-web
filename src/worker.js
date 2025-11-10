@@ -8,7 +8,9 @@ export default {
     // If no static asset is found (404), fallback to index.html for SPA routes
     if (response.status === 404) {
       // Prevent fallback for API routes (optional)
-      if (!url.pathname.startsWith('/links/')) {
+      const isAsset = /\.[a-zA-Z0-9]+$/.test(url.pathname)
+
+      if (!isAsset) {
         const indexUrl = new URL('/index.html', request.url)
         response = await env.ASSETS.fetch(indexUrl)
       }
