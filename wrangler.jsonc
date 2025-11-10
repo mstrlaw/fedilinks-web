@@ -1,6 +1,7 @@
 {
     "name": "fedilinks",
     "compatibility_date": "2025-11-09", // Update to the day you deploy
+    "main": "src/worker.js",
     "assets": {
       "directory": "./dist"
     }
