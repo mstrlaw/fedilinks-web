@@ -3,8 +3,5 @@
     "compatibility_date": "2025-11-09", // Update to the day you deploy
     "assets": {
       "directory": "./dist"
-    },
-    "vars": {
-        "VITE_SERVER_API": "https://fedilinks.sinacosa.com/v2"
     }
   }
